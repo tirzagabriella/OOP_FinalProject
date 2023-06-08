@@ -9,7 +9,15 @@ A school management system is a software application designed to streamline and 
 - Teacher : Attendance (update student's/attend), Show User List (add/remove), Show Announcement List (add/remove), Assignment (post, score, status, feedback), Logout
 - Student : Attendance, Show Announcement List, Assignment (submit), Logout
 
-## test the program
+## Test the program
 - username : SuperAdmin | password : secret (Super Admin)
 - username : Tirza Gabriella | password : secret1 (Teacher)
 - username : bong | password : bong1 (Student)
+
+## Report
+https://docs.google.com/document/d/1D8hy2HpUNkH_jwz5DvO4Y3GkcOJ8V1OmdQs5nn3GMlw/edit?usp=sharing
+I have also attached the pdf file of the report at the repo
+
+## Final Demo
+
+## Screenshot
