@@ -64,6 +64,9 @@ public class RemoveAnnouncement extends JFrame implements ActionListener {
         try{
             // get all announcements
             conn c1  = new conn();
+
+            // query to fetch data (Aliases are usually used to just give a different naming to the table just for
+            // ease of use later (for example when accessing the table's fields, we can use a shorter name as an alias)
             String s1 = "select a.announcement_id , a.announcement_title , a.announcement_description , u.user_name , u.user_role from announcement a join `user` u on a.user_id = u.user_id";
             ResultSet rs  = c1.s.executeQuery(s1);
 

@@ -63,6 +63,9 @@ public class StudentAttendance extends JFrame implements ActionListener{
         try{
             // get students
             conn c1  = new conn();
+
+            // query to fetch data (Aliases are usually used to just give a different naming to the table just for
+            // ease of use later (for example when accessing the table's fields, we can use a shorter name as an alias)
             String s1 = "select u.user_name, u.user_id, u.user_role from `user` u where u.user_role = 'student'";
             ResultSet rs  = c1.s.executeQuery(s1);
 

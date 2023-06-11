@@ -56,7 +56,8 @@ public class SubmittedAssignments extends JFrame implements ActionListener {
     void getSubmittedAssignments(){
         // System.out.println("Fetching assignments data");
         try{
-            // fetch assignment data
+            // query to fetch data (Aliases are usually used to just give a different naming to the table just for
+            // ease of use later (for example when accessing the table's fields, we can use a shorter name as an alias)
             conn c1  = new conn();
             String s1 = "select " +
                     "a.assignment_id, " +

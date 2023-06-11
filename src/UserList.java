@@ -52,6 +52,10 @@ public class UserList extends JFrame implements ActionListener {
         // System.out.println("Fetching users data");
         try{
             conn c1  = new conn();
+
+            // query to user table (user table uses the alias 'u'. Aliases are usually used to just give a different
+            // naming to the table just for ease of use later (for example when accessing the table's fields, we can
+            // use a shorter name as an alias)
             String s1 = "select u.user_name, u.user_id, u.user_role from `user` u";
             if(this.currentEntity.role.equals("admin")){ // admin will only get list of users with roles other than 'admin'
                 s1 = s1 + " where u.user_role <> 'admin'";
